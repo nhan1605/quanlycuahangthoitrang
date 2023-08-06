@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./modal.css">
+</head>
+<body>
+    
+    <div class="container">
+ 
+        <h2>Freetuts.net hướng dẫn tạo Modal Box</h2>
+     
+        <!-- Button đăng nhập để mở form đăng nhập -->
+        <button id="myBtn">Đăng Nhập</button>
+     
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+            <!-- Nội dung form đăng nhập -->
+            <div class="modal-content">
+                <form action="#">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                    <h2>Form đăng nhập</h2>
+                    </div>
+                    <div class="modal-body">
+                         <div class="fomrgroup">
+                        <b>UserName:</b>
+                        <input type="text" name="username">
+                    </div>
+                    <div class="fomrgroup">
+                        <b>PassWord:</b>
+                        <input type="passWord" name="passWord">
+                    </div>
+                    </div>
+                   <div class="modal-footer">
+                    <div class="fomrgroup">
+                        <button>Đăng nhập</button>
+                    </div>
+                   </div>
+                    
+                </form>
+            </div>
+        </div>
+        <!-- end modal -->
+    </div>
+
+    <script>
+        // lấy phần Modal
+        var modal = document.getElementById('myModal');
+      
+        // Lấy phần button mở Modal
+        var btn = document.getElementById("myBtn");
+      
+        // Lấy phần span đóng Modal
+        var span = document.getElementsByClassName("close")[0];
+      
+        // Khi button được click thi mở Modal
+        btn.onclick = function() {
+            modal.style.display = "block";
+        }
+      
+        // Khi span được click thì đóng Modal
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+      
+        // Khi click ngoài Modal thì đóng Modal
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
+</body>
+</html>

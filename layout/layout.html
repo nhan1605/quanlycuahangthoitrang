@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>D3NTCLOTHING - SHOP THỜI TRANG</title>
+
+    <!--== Favicon ==-->
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon" />
+
+    <!--== Google Fonts ==-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,400i,500,600,700" rel="stylesheet">
+
+    <!--== Bootstrap CSS ==-->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+    <!--== Themify Icons CSS ==-->
+    <link href="../assets/css/themify-icons.css" rel="stylesheet"/>
+    <!--== Font-awesome Icons CSS ==-->
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet"/>
+    <!--== Ionicons CSS ==-->
+    <link href="../assets/css/ionicons.min.css" rel="stylesheet"/>
+    <!--== Animate CSS ==-->
+    <link href="../assets/css/animate.css" rel="stylesheet"/>
+    <!--== Aos CSS ==-->
+    <link href="../assets/css/aos.css" rel="stylesheet"/>
+    <!--== FancyBox CSS ==-->
+    <link href="../assets/css/jquery.fancybox.min.css" rel="stylesheet"/>
+    <!--== Slicknav CSS ==-->
+    <link href="../assets/css/slicknav.css" rel="stylesheet"/>
+    <!--== Swiper CSS ==-->
+    <link href="../assets/css/swiper.min.css" rel="stylesheet"/>
+    <!--== Main Style CSS ==-->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <!--=======================Javascript============================-->
+
+    <!--=== Modernizr Min Js ===-->
+    <script src="../assets/js/modernizr.js"></script>
+    <!--=== jQuery Min Js ===-->
+    <script src="../assets/js/jquery-main.js"></script>
+    <!--=== jQuery Migration Min Js ===-->
+    <script src="../assets/js/jquery-migrate.js"></script>
+    <!--=== Bootstrap Min Js ===-->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <!--=== jquery Appear Js ===-->
+    <script src="../assets/js/jquery.appear.js"></script>
+    <!--=== jquery Swiper Min Js ===-->
+    <script src="../assets/js/swiper.min.js"></script>
+    <!--=== jquery Fancybox Min Js ===-->
+    <script src="../assets/js/fancybox.min.js"></script>
+    <!--=== jquery Aos Min Js ===-->
+    <script src="../assets/js/aos.min.js"></script>
+    <!--=== jquery Slicknav Js ===-->
+    <script src="../assets/js/jquery.slicknav.js"></script>
+    <!--=== jquery Countdown Js ===-->
+    <script src="../assets/js/jquery.countdown.min.js"></script>
+    <!--=== jquery Wow Min Js ===-->
+    <script src="../assets/js/wow.min.js"></script>
+    <!--=== jQuery Zoom Min Js ===-->
+    <script src="../assets/js/jquery-zoom.min.js"></script>
+
+    <!--=== Custom Js ===-->
+    <script src="../assets/js/custom.js"></script>
+    <style>
+        .cart-notify{
+            display: flex;
+            justify-content: center;
+            align-content: center;
+            height: 200px;
+        }
+        .cart-mani{
+            padding: 8px;
+            text-align: center;
+            background-color: rgb(142, 141, 141);
+        }
+        .cart-mani:hover{
+            background-color: rgb(164, 162, 162);
+        }
+        .cart-login{
+          
+            position: relative;
+        }
+        .cart-login:after{
+            content: "";
+            position: absolute;
+            background-color: #000;
+            height: 100%;
+            width: 1px;
+            right: 0;
+            top: 0;
+        }
+    </style>
+</head>
+
+<body>
+
+<!--wrapper start-->
+<div class="wrapper home-default-wrapper">
+
+  <!--== Start Preloader Content ==-->
+  <div class="preloader-wrap">
+    <div class="preloader">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+  <!--== End Preloader Content ==-->
+
+  <!--== Start Header  ==-->
+  <header class="header-area header-default sticky-header">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-5 col-sm-3 col-md-3 col-lg-2 pr-0">
+          <div class="header-logo-area">
+            <a href="index.html">
+              <img class="logo-main" src="../assets/img/logo.png" alt="Logo" />
+              <img class="logo-light" src="../assets/img/logo.png" alt="Logo" />
+            </a>
+          </div>
+        </div>
+        <div class="col-7 col-sm-9 col-md-9 col-lg-10">
+          <div class="header-align">
+            <div class="header-navigation-area">
+              <ul class="main-menu nav justify-content-center">
+                <li class=" active"><a href="index.html">Trang chủ</a></li>
+                <li class="has-submenu full-width colunm-two position-static"><a href="index.html">Sản phẩm</a>
+                  <ul class="submenu-nav submenu-nav-mega">
+                    <li class="mega-menu-item"><a class="srmenu-title" href="#">Shop Pages Layout</a>
+                      <ul>
+                        <li><a href="shop-3-grid.html">Shop 3 Column</a></li>
+                        <li><a href="shop-4-grid.html">Shop 4 Column</a></li>
+                        <li><a href="shop.html">Shop Left Sidebar</a></li>
+                        <li><a href="shop-right-sidebar.html">Shop Right Sidebar</a></li>
+                        <li><a href="shop-list.html">Shop Listing View</a></li>
+                        <li><a href="shop-list-left-sidebar.html">Shop List left Sidebar</a></li>
+                        <li><a href="shop-list-right-sidebar.html">Shop List Right Sidebar</a></li>
+                      </ul>
+                    </li>
+                    <li class="mega-menu-item"><a class="srmenu-title" href="#">Single Products</a>
+                      <ul>
+                        <li><a href="shop-single-product.html">Simple Product</a></li>
+                        <li><a href="shop-single-product-variable.html">Variable Product</a></li>
+                        <li><a href="shop-single-product-affiliate.html">Affiliate Product</a></li>
+                        <li><a href="shop-single-product-countdown.html">Countdown Product</a></li>
+                        <li><a href="shop-single-product-soldout.html">Soldout Product</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </li>
+                <li class="has-submenu"><a href="blog.html">Tin tức</a>
+                  <ul class="submenu-nav">
+                    <li><a href="blog.html">Blog Grid Left Sidebar</a></li>
+                    <li><a href="blog-grid-right-sidebar.html">Blog Grid Right Sidebar</a></li>
+                    <li><a href="blog-grid-no-sidebar.html">Blog Grid No Sidebar</a></li>
+                    <li><a href="blog-details-left-sidebar.html">Blog Single Left Sidebar</a></li>
+                    <li><a href="blog-details-right-sidebar.html">Blog Single Right Sidebar</a></li>
+                    <li><a href="blog-details-no-sidebar.html">Blog Single No Sidebar</a></li>
+                  </ul>
+                </li>
+                <li><a href="about.html">Giới thiệu</a></li>
+                <li><a href="contact.html">Liên hệ</a></li>
+              </ul>
+            </div>
+            <div class="header-action-area">
+                <!-- khi đã login -->
+              <div class="header-action-usermenu">
+                <div class="icon-usermenu"><img src="" alt="" width="30px" height="30px" style="border-radius:50%;" ></div>
+                <span>&nbsp&nbsp Nguyễn Mạnh Đat</span>
+                <ul class="user-menu">
+                  <li><a href="account.html">My Account</a></li>
+                  <li><a href="shop-wishlist.html">Wishlist</a></li>
+                  <li><a href="about.html">About Us</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
+                  <li><a href="blog.html">Blog</a></li>
+                  <li><a href="login.html">Login</a></li>
+                </ul>
+              </div>
+              <!-- Khi chưa login -->
+              <!-- <div class="header-action-usermenu">
+                <div class="icon-usermenu"><i class="fa fa-user-circle-o" aria-hidden="true" style="font-size: 30px;"></i></div>
+                 <span>&nbsp&nbsp User</span>
+                <ul class="user-menu">
+                  <li><a href="account.html">Đăng nhập</a></li>
+                  <li><a href="shop-wishlist.html">Đăng ký</a></li>
+                </ul>
+              </div> -->
+              <div class="header-action-cart">
+                <a class="cart-icon" href="shop-cart.html">
+                  <span class="cart-count">0</span>
+                  <i class="ti-shopping-cart"></i>
+                </a>
+                <!-- Khi đã đăng nhập -->
+                <!-- <div class="cart-dropdown-menu">
+                  <div class="minicart-action">
+                    <div class="minicart-item">
+                      <div class="thumb">
+                        <img src="../assets/img/shop/cart/1.jpg" alt="Alan-Shop">
+                      </div>
+                      <div class="content">
+                        <h4 class="title"><a href="#/">2. New badge product - m / gold</a></h4>
+                        <h6 class="nrbQ">Qty: 1</h6>
+                        <p class="price">$80.00</p>
+                      </div>
+                    </div>
+                    <div class="minicart-item">
+                      <div class="thumb">
+                        <img src="../assets/img/shop/cart/1.jpg" alt="Alan-Shop">
+                      </div>
+                      <div class="content">
+                        <h4 class="title"><a href="#/">11. Product with video - purple</a></h4>
+                        <h6 class="nrbQ">Qty: 1</h6>
+                        <p class="price">$39.00</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="shopping-cart-total">
+                    <h4>Total <span>$119.00</span></h4>
+                  </div>
+                  <div class="shopping-cart-btn">
+                    <a class="btn-theme m-0" href="shop-cart.html">View Cart</a>
+                    <a class="btn-theme m-0" href="shop-checkout.html">Checkout</a>
+                  </div>
+                </div>
+                Khi chưa đăng nhập -->
+                <div class="cart-dropdown-menu">
+                    <div class="cart-notify">
+                        <span style="padding-top:20px ;">Bạn chưa đăng nhập</span>
+                    </div>
+                    <div class="row" >
+                        <div class="col-6 cart-mani cart-login"><a href="" style="color: #fff;">Đăng nhập</a></div>
+                        <div class="col-6 cart-mani"><a href="" style="color: #fff;">Đăng ký</a></div>
+                    </div>
+                </div>
+              </div>
+              <button class="btn-menu d-lg-none">
+                <span></span>
+                <span></span>
+                <span></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!--== End Header Wrapper ==-->
+  
+
+  <!--== Start Footer Area Wrapper ==-->
+  <footer class="footer-area">
+    <div class="footer-main">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="widget-item">
+              <h4 class="widget-title">Thông tin giới thiệu</h4>
+              <ul class="about-widget">
+                <li><p>abcd</p></li>
+                <li>Địa chỉ</li>
+                <li>Giờ làm việc</li>
+                <li>Hotline:</li>
+                <li>Email</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="widget-item widget-menu-item">
+              <h4 class="widget-title">Về chúng tôi</h4>
+              <nav class="widget-menu-wrap">
+                <ul class="nav-menu nav">
+                  <li><a href="#">Trang chủ</a></li>
+                  <li><a href="#">Giới thiệu</a></li>
+                  <li><a href="#">Sản phẩm</a></li>
+                  <li><a href="#">Liên hệ</a></li>
+                  <li><a href="#">Tin tức</a></li>
+                  <li><a href="#">Danh sách yêu thích</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="widget-item">
+              <h4 class="widget-title">Hỗ trợ khách hàng</h4>
+              <nav class="widget-menu-wrap">
+                <ul class="nav-menu nav">
+                  <li><a href="#/">Hướng dẫn mua hàng</a></li>
+                  <li><a href="#/">Hướng dẫn thanh toán</a></li>
+                  <li><a href="#/">Hướng dẫn nhận hàng</a></li>
+                  <li><a href="#/">Điều khoản dịch vụ</a></li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-6">
+            <div class="widget-item">
+              <h4 class="widget-title">Theo dõi chúng tôi trên</h4>
+              <p class="mb-0">Theo dõi để cập nhật thông tin dễ dàng</p>
+              <ul class="widget-contact-info" style="margin-left: 60px;">
+                <li class="info-phone"><a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYIpzz09A5HUD5i3UL4Zl7i3jl6BP1f6vaGQ&usqp=CAU" alt="" style="border-radius: 5px" height="30px" width="30px ">&nbsp&nbsp Facebook</a></li>
+                <li class="info-mail"><a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"  style="border-radius: 5px" alt="" height="30px" width="30px ">&nbsp&nbsp Instagram</a></li>
+                <li class="info-mail"><a href="#"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS4n_urpJ9XpwOTdzBVbGvactwHrPagYQrTJPYjxfxLGkSyu7nJZVqRVGAeohnPgKMrnKE&usqp=CAU"  style="border-radius: 5px" alt="" height="30px" width="30px ">&nbsp&nbsp Twitter</a></li>
+                <li class="info-mail"><a href="#"><img src="https://sf-tb-sg.ibytedtos.com/obj/eden-sg/uhtyvueh7nulogpoguhm/tiktok-icon2.png"  style="border-radius: 5px" alt="" height="30px" width="30px ">&nbsp&nbsp Tiktok</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="footer-bottom-content">
+          <div class="row align-items-center">
+            <div class="col-12">
+              <div class="widget-copyright text-center">
+                <p>© 2025 - <span>D3NTCLOTHING</span>. Made with <i class="fa fa-heart"></i> by <a target="_blank" href="https://www.hasthemes.com">Nhóm 7</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!--== End Footer Area Wrapper ==-->
+  
+  <!--== Scroll Top Button ==-->
+  <div class="scroll-to-top"><span class="fa fa-angle-double-up"></span></div> 
+
+
+</body>
+
+</html>

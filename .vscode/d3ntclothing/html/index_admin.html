@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>D3NTCLOTHING - ADMIN</title>
+
+    <!--== Favicon ==-->
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon" />
+
+    <!--== Google Fonts ==-->
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,400i,500,600,700" rel="stylesheet">
+
+    <!--== Bootstrap CSS ==-->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet"/>
+    <!--== Themify Icons CSS ==-->
+    <link href="../assets/css/themify-icons.css" rel="stylesheet"/>
+    <!--== Font-awesome Icons CSS ==-->
+    <link href="../assets/css/font-awesome.min.css" rel="stylesheet"/>
+    <!--== Ionicons CSS ==-->
+    <link href="../assets/css/ionicons.min.css" rel="stylesheet"/>
+    <!--== Animate CSS ==-->
+    <link href="../assets/css/animate.css" rel="stylesheet"/>
+    <!--== Aos CSS ==-->
+    <link href="../assets/css/aos.css" rel="stylesheet"/>
+    <!--== FancyBox CSS ==-->
+    <link href="../assets/css/jquery.fancybox.min.css" rel="stylesheet"/>
+    <!--== Slicknav CSS ==-->
+    <link href="../assets/css/slicknav.css" rel="stylesheet"/>
+    <!--== Swiper CSS ==-->
+    <link href="../assets/css/swiper.min.css" rel="stylesheet"/>
+    <!--== Main Style CSS ==-->
+    <link href="../assets/css/style.css" rel="stylesheet" />
+    <!--=======================Javascript============================-->
+
+    <!--=== Modernizr Min Js ===-->
+    <script src="../assets/js/modernizr.js"></script>
+    <!--=== jQuery Min Js ===-->
+    <script src="../assets/js/jquery-main.js"></script>
+    <!--=== jQuery Migration Min Js ===-->
+    <script src="../assets/js/jquery-migrate.js"></script>
+    <!--=== Bootstrap Min Js ===-->
+    <script src="../assets/js/bootstrap.min.js"></script>
+    <!--=== jquery Appear Js ===-->
+    <script src="../assets/js/jquery.appear.js"></script>
+    <!--=== jquery Swiper Min Js ===-->
+    <script src="../assets/js/swiper.min.js"></script>
+    <!--=== jquery Fancybox Min Js ===-->
+    <script src="../assets/js/fancybox.min.js"></script>
+    <!--=== jquery Aos Min Js ===-->
+    <script src="../assets/js/aos.min.js"></script>
+    <!--=== jquery Slicknav Js ===-->
+    <script src="../assets/js/jquery.slicknav.js"></script>
+    <!--=== jquery Countdown Js ===-->
+    <script src="../assets/js/jquery.countdown.min.js"></script>
+    <!--=== jquery Wow Min Js ===-->
+    <script src="../assets/js/wow.min.js"></script>
+    <!--=== jQuery Zoom Min Js ===-->
+    <script src="../assets/js/jquery-zoom.min.js"></script>
+
+    <!--=== Custom Js ===-->
+    <script src="../assets/js/custom.js"></script>
+    <style>
+      .ad_onclick{
+        padding-left: 20px;
+      }
+      .admin_click{
+        cursor: pointer;
+      }
+      .admin_item{
+        padding: 10px;
+        border-bottom: 1px solid rgb(206, 206, 206);
+      }
+      .admin_item:hover{
+        background-color: antiquewhite;
+
+      }
+      .admin_text{
+        color: #000;
+      }
+      .ad_click_item{
+        padding: 8px;
+        border-bottom: 1px solid rgb(206, 206, 206);
+      }
+
+    </style>
+</head>
+<body>
+    <div class="wrapper home-default-wrapper">
+
+        <!--== Start Preloader Content ==-->
+        <div class="preloader-wrap">
+          <div class="preloader">
+            <span class="dot"></span>
+            <div class="dots">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </div>
+          <!--== End Preloader Content ==-->
+          <!--== Start Header  ==-->
+          <header class="header-area header-default sticky-header" style="background-color: antiquewhite;">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-5 col-sm-3 col-md-3 col-lg-2 pr-0">
+                  <div class="header-logo-area">
+                    <a href="index.html">
+                      <img class="logo-main" src="../assets/img/logo.png" alt="Logo" />
+                      <img class="logo-light" src="../assets/img/logo.png" alt="Logo" />
+                    </a>
+                  </div>
+                </div>
+                <div class="col-7 col-sm-9 col-md-9 col-lg-10">
+                  <div class="header-align">
+                    <div class="header-navigation-area">
+                      <span>XIN CHÀO</span>
+                    </div>
+                    <div class="header-action-area">
+                        <!-- khi đã login -->
+                      <!-- <div class="header-action-usermenu">
+                        <div class="icon-usermenu"><img src="" alt="" width="30px" height="30px" style="border-radius:50%;" ></div>
+                        <span>&nbsp&nbsp Nguyễn Mạnh Đat</span>
+                        <ul class="user-menu">
+                          <li><a href="account.html">My Account</a></li>
+                          <li><a href="shop-wishlist.html">Wishlist</a></li>
+                          <li><a href="about.html">About Us</a></li>
+                          <li><a href="contact.html">Contact Us</a></li>
+                          <li><a href="blog.html">Blog</a></li>
+                          <li><a href="login.html">Login</a></li>
+                        </ul>
+                      </div> -->
+                      <!-- Khi chưa login -->
+                      <div class="header-action-usermenu">
+                        <div class="icon-usermenu"><i class="fa fa-user-circle-o" aria-hidden="true" style="font-size: 30px;"></i></div>
+                         <span>&nbsp&nbsp ADMIN</span>
+                        <ul class="user-menu">
+                          <li><a href="login.html">Đăng nhập</a></li>
+                        </ul>
+                      </div>
+                      
+                     
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+        <!--== End Header  ==-->
+        <main class="main-content" style="background-color: rgb(233, 233, 233); min-height: 3000px;">
+          <section class="product-area product-grid-area">
+            <div class="container">
+              <div class="row">
+                <!-- slide-bar -->
+                <div class="col-lg-3" style="background-color: rgb(245, 245, 245); padding-top: 20px;">
+                  <div class="widget-item">
+                    <ul class="about-widget">
+                      <li class="admin_item ad_over" ><a class="admin_text" href="index_admin.html"> Tổng quan</a></li>
+                      <li class="admin_click admin_item" data-bs-toggle="collapse" data-bs-target="#order">Đơn hàng
+                        <div  class="collapse" id="order" style="float: right;"> <i class="fa fa-angle-down" aria-hidden="true"></i></div><!-- &nbsp&nbsp&nbsp&nbsp <i class="fa fa-angle-right" aria-hidden="true"></i> -->
+                        <div class="collapse show" id="order" style="float: right;" > <i class="fa fa-angle-right" aria-hidden="true"></i></div>  
+                      </li>
+                        <ul class="ad_order_click ad_onclick collapse" id="order">
+                          <li class="ad_click_item" ><a class="admin_text" href="list_order.html">Danh sách đơn hàng</a> </li>
+                          <li class="ad_click_item"><a class="admin_text" href="#">Danh sách đơn hàng thành công</a></li>
+                        </ul>
+                      <li class="admin_click admin_item" data-bs-toggle="collapse" data-bs-target="#product">Quản lý sản phẩm
+                        <div class="collapse" id="product" style="float: right;"> <i class="fa fa-angle-down" aria-hidden="true"></i></div>
+                        <div class="collapse show" id="product" style="float: right;" > <i class="fa fa-angle-right" aria-hidden="true"></i></div>
+                      </li> 
+                      <ul class="ad_product_click ad_onclick collapse" id="product">
+                          <li class="ad_click_item"><a class="admin_text" href="">Danh sách sản phẩm</a> </li>
+                          <li class="ad_click_item"><a class="admin_text" href=""> Thương hiệu</a> </li>
+                          <li class="ad_click_item"><a class="admin_text" href="">Loại hàng</a> </li>                    
+                        </ul>
+                      <li class="admin_item ad_customer"><a class="admin_text" href=""> Khách hàng</a></li>
+                      <li class="admin_item ad_promotion"><a class="admin_text" href=""> Khuyến mãi</a></li>
+                      <li class="admin_item ad_report"><a class="admin_text" href=""> Báo cáo</a></li>
+                      <li class="admin_item ad_admin"><a class="admin_text" href="">Danh sách nhân viên</a> </li>
+                      
+                    </ul>          
+                  </div>
+                </div>
+    <!-- End header.php -->
+                <!-- nội dung -->
+                <div class="col-lg-9">
+                  <div class="admin_item-content">
+                    <span>a</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+        </main>
+      <!-- start Footer.php -->
+        <!--== Start Footer Area Wrapper ==-->
+  <footer class="footer-area" style="background-color: antiquewhite;">
+    <div class="footer-main"  style="padding: 20px;" >
+      <div class="container" style="border-bottom:1px solid rgb(167, 167, 167)">
+          <div class="footer_content" style="text-align: center;">
+            <span>Đây là trang quản trị của D3NTCLOTHING</span>
+          </div>
+      </div>
+    </div>
+    <div class="footer-bottom" style="background-color: antiquewhite;">
+      <div class="container">
+        <div class="footer-bottom-content">
+          <div class="row align-items-center">
+            <div class="col-12">
+              <div class="widget-copyright text-center">
+                <p>© 2025 - <span>D3NTCLOTHING</span>. Made with <i class="fa fa-heart"></i> by <a target="_blank" href="https://www.hasthemes.com">Nhóm 7</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+
+</div>
+</body>
+</html>
